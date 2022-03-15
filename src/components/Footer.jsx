@@ -9,9 +9,11 @@ import {
 	WhatsApp,
 } from "@material-ui/icons";
 import styled from "styled-components";
+import { mobile } from "../responsive";
 
 const Container = styled.div`
 	display: flex;
+	${mobile({ flexDirection: "column" })}
 `;
 
 const Left = styled.div`
@@ -21,7 +23,9 @@ const Left = styled.div`
 	padding: 20px;
 `;
 
-const Logo = styled.h1``;
+const Logo = styled.h1`
+	${mobile({ textAlign: "center" })}
+`;
 
 const Desc = styled.p`
 	margin: 20px 0px;
@@ -29,6 +33,7 @@ const Desc = styled.p`
 
 const SocialContainer = styled.div`
 	display: flex;
+	${mobile({ justifyContent: "center" })}
 `;
 
 const SocialIcon = styled.div`
@@ -47,10 +52,12 @@ const SocialIcon = styled.div`
 const Center = styled.div`
 	flex: 1;
 	padding: 20px;
+	${mobile({ backgroundColor: "#FCF5F6" })}
 `;
 
 const Title = styled.h3`
 	margin-bottom: 30px;
+	${mobile({ textAlign: "center" })}
 `;
 
 const List = styled.ul`
@@ -59,6 +66,7 @@ const List = styled.ul`
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+	${mobile({ justifyContent: "center" })}
 `;
 
 const ListItem = styled.li`
@@ -81,6 +89,7 @@ const ContactItem = styled.div`
 
 const Payment = styled.img`
 	width: 50%;
+	${mobile({ width: "100%" })}
 `;
 
 const Footer = () => {
