@@ -41,6 +41,7 @@ const SocialIcon = styled.div`
 	align-items: center;
 	justify-content: center;
 	margin-right: 20px;
+	cursor: pointer;
 `;
 
 const Center = styled.div`
@@ -63,6 +64,7 @@ const List = styled.ul`
 const ListItem = styled.li`
 	width: 50%;
 	margin-bottom: 10px;
+	cursor: pointer;
 `;
 
 const Right = styled.div`
@@ -74,6 +76,7 @@ const ContactItem = styled.div`
 	margin-bottom: 20px;
 	display: flex;
 	align-items: center;
+	cursor: pointer;
 `;
 
 const Payment = styled.img`
