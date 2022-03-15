@@ -9,11 +9,11 @@ import {
 	WhatsApp,
 } from "@material-ui/icons";
 import styled from "styled-components";
-import { mobile } from "../responsive";
+import { mobile, tablet } from "../responsive";
 
 const Container = styled.div`
 	display: flex;
-	${mobile({ flexDirection: "column" })}
+	${(mobile, tablet({ flexDirection: "column" }))}
 `;
 
 const Left = styled.div`
@@ -21,10 +21,11 @@ const Left = styled.div`
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
+	${tablet({ margin: "0px 50px" })}
 `;
 
 const Logo = styled.h1`
-	${mobile({ textAlign: "center" })}
+	${(mobile, tablet({ textAlign: "center" }))}
 `;
 
 const Desc = styled.p`
@@ -33,7 +34,7 @@ const Desc = styled.p`
 
 const SocialContainer = styled.div`
 	display: flex;
-	${mobile({ justifyContent: "center" })}
+	${(mobile, tablet({ justifyContent: "center" }))}
 `;
 
 const SocialIcon = styled.div`
@@ -52,12 +53,12 @@ const SocialIcon = styled.div`
 const Center = styled.div`
 	flex: 1;
 	padding: 20px;
-	${mobile({ backgroundColor: "#FCF5F6" })}
+	${(mobile, tablet({ backgroundColor: "#FCF5F6" }))}
 `;
 
 const Title = styled.h3`
 	margin-bottom: 30px;
-	${mobile({ textAlign: "center" })}
+	${(mobile, tablet({ textAlign: "center" }))}
 `;
 
 const List = styled.ul`
@@ -67,6 +68,7 @@ const List = styled.ul`
 	display: flex;
 	flex-wrap: wrap;
 	${mobile({ justifyContent: "center" })}
+	${tablet({ textAlign: "center" })}
 `;
 
 const ListItem = styled.li`
@@ -78,6 +80,9 @@ const ListItem = styled.li`
 const Right = styled.div`
 	flex: 1;
 	padding: 20px;
+	${tablet({
+		textAlign: "center",
+	})}
 `;
 
 const ContactItem = styled.div`
@@ -85,6 +90,7 @@ const ContactItem = styled.div`
 	display: flex;
 	align-items: center;
 	cursor: pointer;
+	${tablet({ justifyContent: "center" })}
 `;
 
 const Payment = styled.img`

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { mobile } from "../responsive";
+import { mobile, tablet } from "../responsive";
 
 const Container = styled.div``;
 
@@ -48,7 +48,7 @@ const TopText = styled.span`
 const Bottom = styled.div`
 	display: flex;
 	justify-content: space-between;
-	${mobile({ flexDirection: "column" })}
+	${(mobile, tablet({ flexDirection: "column" }))}
 `;
 
 const Info = styled.div`
