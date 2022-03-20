@@ -5,6 +5,7 @@ import Products from "../components/Products";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { mobile } from "../responsive";
+import { useLocation } from "react-router-dom";
 
 const Container = styled.div``;
 
@@ -38,6 +39,9 @@ const Select = styled.select`
 const Option = styled.option``;
 
 const ProductList = () => {
+	const location = useLocation();
+	const cat = location.pathname.split("/")[2];
+
 	return (
 		<Container>
 			<Navbar />
@@ -73,8 +77,8 @@ const ProductList = () => {
 					<FilterText>Sort Products:</FilterText>
 					<Select>
 						<Option selected>Newest</Option>
-						<Option>Price (low)</Option>
-						<Option>Price (high)</Option>
+						<Option>Price (asc)</Option>
+						<Option>Price (desc)</Option>
 					</Select>
 				</Filter>
 			</FilterContainer>
