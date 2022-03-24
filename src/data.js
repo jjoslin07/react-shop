@@ -27,19 +27,19 @@ export const categories = [
 		id: 1,
 		img: "https://images.pexels.com/photos/1024036/pexels-photo-1024036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
 		title: "SUMMER COLLECTION",
-		cat: "summer",
+		cat: "shirt",
 	},
 	{
 		id: 2,
 		img: "https://images.pexels.com/photos/1734202/pexels-photo-1734202.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
 		title: "WINTER COLLECTION",
-		cat: "winter",
+		cat: "pants",
 	},
 	{
 		id: 3,
 		img: "https://images.pexels.com/photos/1392154/pexels-photo-1392154.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
 		title: "SWIM COLLECTION",
-		cat: "swim",
+		cat: "woman",
 	},
 ];
 export const popularProducts = [
